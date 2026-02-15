@@ -1,0 +1,29 @@
+{
+  "name": "multi-level-cache",
+  "version": "1.0.0",
+  "description": "Database-agnostic multi-level caching with L1 (in-memory LRU) and L2 (Redis)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": [
+    "cache",
+    "redis",
+    "lru",
+    "multi-level",
+    "typescript"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "ioredis": "^5.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.0"
+  }
+}
